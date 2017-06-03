@@ -18,13 +18,13 @@
             </ul>
         </nav>
         <div id="container">
-            <form action="conexao.php" method="post" autocomplete="off">
+            <form action="conexao.php" method="post" onsubmit="return validacao()" autocomplete="off">
                 <label>Nome:</label>
-                <input type="text" maxlength="50" name="nome" placeholder="Insira seu nome">
+                <input type="text" maxlength="50" name="nome" id="nome" placeholder="Insira seu nome">
                 <label>E-mail:</label>
-                <input type="email" maxlength="50" name="email" placeholder="Insira seu e-mail">
+                <input type="email" maxlength="50" name="email" id="email" placeholder="Insira seu e-mail">
                 <label>Assunto:</label>
-                <input type="text" maxlength="50" name="assunto" placeholder="Insira o assunto">
+                <input type="text" maxlength="50" name="assunto" id="assunto" placeholder="Insira o assunto">
                 <label>Descrição:</label>
                 <textarea id="descricao" maxlength="300" name="descricao" placeholder="Descreva sobre o chamado (max: 300 char)"></textarea>
                 <p>
@@ -39,5 +39,6 @@
         <p class="versao">
             Beta Version - 1.0
         </p>
+		<script src="js/formulario.js"></script>
     </body>
 </html>
